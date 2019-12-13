@@ -1,0 +1,5 @@
+file:
+  - ./test/api/novelTest.js
+  - ./test/api/userTest.js
+  - ./test/api/authorTest.js
+require: '@babel/register'
