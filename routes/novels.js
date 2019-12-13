@@ -1,8 +1,6 @@
 let Novel = require('../models/novels');
 let express = require('express');
 let router = express.Router();
-let mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/novels');
 
 router.findAll = (req, res) => {
     res.setHeader('Content-Type', 'application/json');

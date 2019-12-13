@@ -7,11 +7,14 @@ var logger = require('morgan')
 
 var indexRouter = require('./routes/index')
 var usersRouter = require('./routes/users')
+var port = (process.env.PORT || 3000);
 
 const novels = require("./routes/novels")
 const author = require("./routes/author")
 const user = require("./routes/user")
 var app = express()
+
+app.listen(port);
 
 app.use(cors())
 // view engine setup

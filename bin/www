@@ -88,4 +88,8 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+let mongoose = require('mongoose');
+mongoose.connect('mongodb://ella:ajdxmn12138@ds243518.mlab.com:43518/heroku_5wx67j0s');
+
 module.exports = server
